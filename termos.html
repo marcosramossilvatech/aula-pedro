@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Termos de Contrato</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    .termos {
+      border: 1px solid #ccc;
+      padding: 15px;
+      height: 150px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    button {
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+   <h1>Visualização do Contrato</h1>
+
+  <div class="termos">
+    <h3>Contrato de Prestação de serviços</h3>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, culpa? Ducimus deleniti ex ipsa amet, quam possimus. Nulla sunt dolorum nesciunt impedit fugiat voluptatem odio, voluptatibus quam vel iste ducimus?</p>
+
+    <h3>Contrato de Prestação de serviços</h3>
+    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi repellendus illum aliquid? Atque inventore neque culpa! Ipsa, obcaecati. Natus officiis, debitis cupiditate praesentium obcaecati quo sit quos accusantium consectetur similique?</P>
+  </div>
+
+  <label>
+    <input type="checkbox" id="aceitarTermos"> Li e aceito os termos de contrato
+  </label>
+  <br><br>
+
+  <button id="botaoContinuar" disabled>Continuar</button>
+
+  <script>
+    const checkbox = document.getElementById('aceitarTermos');
+    const botao = document.getElementById('botaoContinuar');
+
+    checkbox.addEventListener('change', () => {
+      botao.disabled = !checkbox.checked;
+     
+    });
+
+    botao.addEventListener('click', () => {
+
+      <!--Redireciona para outro site ao clicar no botão-->
+      window.location.href = 'https://youtube.com'; 
+    }); 
+  </script>
+</body>
+</html>

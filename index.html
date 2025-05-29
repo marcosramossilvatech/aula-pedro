@@ -9,25 +9,102 @@
     
     <title>Tradução</title> 
     <!--titulo da pagina-->
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+
+
+        .Início{
+            background-color: rgb(49, 68, 70);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            display: block;
+        }
+        .Menu{
+            background-color: #333;
+            overflow: hidden;
+        }
+        .Menu a{
+            color: white;
+            padding: 14px 16px;
+            display: block;
+            text-decoration: none;
+            float: left;
+        }
+    </style>
 </head>
 <body>
 
+
+<div class="Início"> 
     <h1>Aprendendo Hiper links.</h1>
     <hr> 
-    <!--LINK ABSOLUTO(URL ABSOLUTA)-->
-    <a href="https://fechamento-web.vercel.app/"
-    target= "_blank">Ir para o site.</a><br>
-
+ 
+</div>
 
     <!--LINK RELATIVO(URL RELATIVO)-->
-    <a href="sobre.html">
+   <div class="Menu">
+     <a href="sobre.html">
         Meu site.
-    </a><br>
-
+    </a>
+    <a href="https://fechamento-web.vercel.app/">Site</a>
 
     <a href="Equipe/dimitri.html">Dimitri.</a>
+
+       <!--LINK ABSOLUTO(URL ABSOLUTA)-->
+    <a href="termos.html"
+    target= "_blank">Termos</a><br>
+    
+   </div>
+
     <hr>
 
+     <!--TABELAS-->
+
+    <h2>Tabelas</h2>
+  
+    <table border="1"      <!--fazer uma borda-->
+<tr> <!--Título das colunas-->
+    <th>Nome</th> <!--Nome das colunas-->
+    <th>Idade</th>
+    <th>Peso</th>
+</tr>
+      
+      <!--Colunas-->
+     <td>Pedro</td>
+     <td>14</td>
+     <td>65</td>
+      
+       <!--2-->
+<tr>     
+    <td>Gabriel</td>
+     <td>15</td>
+     <td>63</td>
+     </tr>
+ </table>
+     <br>
+     
+     <!--LISTAS NÃO ORDENADAS(EM PONTO)-->
+     <h2>Listas não ordenadas.</h2>
+     <ul>
+     <li>Pedro</li>
+     <li>Gabriel</li>
+     <li>Marcos</li>
+     </ul>
+
+     <!--LISTAS ORDENADAS(EM NÚMEROS)-->
+     <h2>Listas ordenadas.</h2>
+     <ol>
+        <li>Pedro</li>
+        <li>Marcos</li>
+        <li>Gabriel</li>
+     </ol>     
     
 </body>
 </html>
